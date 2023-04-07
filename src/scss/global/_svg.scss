@@ -1,0 +1,9 @@
+.--svg__cart,.--svg__cart-before::before,.--svg__cart-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='23' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_301_1935)'%3E%3Cpath d='M6.9 19.2c-1.265 0-2.3 1.08-2.3 2.4 0 1.32 1.035 2.4 2.3 2.4s2.3-1.08 2.3-2.4c0-1.32-1.035-2.4-2.3-2.4zM0 0v2.4h2.3l4.14 9.12-1.61 2.88c-.115.36-.23.84-.23 1.2 0 1.32 1.035 2.4 2.3 2.4h13.8v-2.4H7.36c-.115 0-.23-.12-.23-.24v-.12l1.035-2.04h8.51c.92 0 1.61-.48 1.955-1.2l4.14-7.8c.23-.24.23-.36.23-.6 0-.72-.46-1.2-1.15-1.2H4.83L3.795 0H0zm18.4 19.2c-1.265 0-2.3 1.08-2.3 2.4 0 1.32 1.035 2.4 2.3 2.4s2.3-1.08 2.3-2.4c0-1.32-1.035-2.4-2.3-2.4z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_301_1935'%3E%3Cpath fill='%23fff' d='M0 0h23v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.--svg__cart-before::before {
+    content:'';
+}
+.--svg__cart-after::after {
+    content:'';
+}

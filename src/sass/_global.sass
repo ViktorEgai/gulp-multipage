@@ -1,0 +1,44 @@
+html
+
+	height: 100%
+body
+	font-family: $main-font
+	color: $text-color
+	background-color: $body-bg-color
+	height: 100%
+	overflow-x: hidden
+input, textarea
+	&:focus::placeholder
+		color: transparent !important
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100%
+.main
+	flex: 1 1 auto
+.clear
+	clear: both
+
+// контейнер
+.container
+	max-width: $container-max-width
+	width: $container-width
+	margin: 0 auto
+	padding: $container-padding
+// Заголовок страницы
+.page-title
+	font-size: 24px
+	line-height: 28px
+	font-weight: 400
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	margin-bottom: 28px
+
+// Заголовок секции
+.section-title
+	font-size: 3.4rem
+	line-height: 117%
+	font-weight: 700
+body
+	background-color: green
