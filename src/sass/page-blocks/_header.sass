@@ -1,2 +1,54 @@
 .header
-  background-color: red
+  padding-top: 26px
+  margin-bottom: 40px
+
+  &-top
+    display: flex
+    align-items: center
+    margin-bottom: 35px
+  &__logo
+    margin-right: auto
+
+  &-top-menu
+    display: flex
+    align-items: center
+
+  &-top-menu__item
+    font-size: 14px
+    line-height: 137.02%
+    color: #717171
+    margin-left: 38px
+  &-phone
+    margin: 0 32px
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    text-transform: uppercase
+  &-top-menu-buttons
+    display: flex
+    align-items: center
+  &-top-menu-buttons__item
+    width: 35px
+    margin-left: 28px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: -14px
+      transform: translateY(-50%)
+      height: 20px
+      width: 1px
+      background-color: #B4B4B4
+    svg
+      width: 100%
+  &-menu
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-menu__item a
+    display: block
+    padding: 18px 25px
+    box-shadow: 0px 4px 20px rgba(210, 210, 210, 0.3)
+    border-radius: 20px

@@ -1,4 +1,9 @@
-const plugins = [];
+const plugins = [
+	'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+	'node_modules/slick-carousel/slick/slick.min.js',
+	'node_modules/aos/dist/aos.js',
+	'node_modules/inputmask/dist/jquery.inputmask.min.js',
+];
 const {
 	src,
 	dest

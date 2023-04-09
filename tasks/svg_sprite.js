@@ -16,6 +16,7 @@ module.exports = function svg_sprite() {
 		}))
 		.pipe(sprite({
 			mode: {
+				
 				stack: {
 					sprite: '../sprite.svg'
 				}

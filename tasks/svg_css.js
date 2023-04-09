@@ -16,9 +16,9 @@ module.exports = function svg_css() {
 		}))
 		.pipe(svgCss({
 			fileName: '_svg',
-			fileExt: 'sass',
+			fileExt: 'scss',
 			cssPrefix: '--svg__',
 			addSize: false
 		}))
-		.pipe(dest('src/sass/global'))
+		.pipe(dest('src/sass/components'))
 }

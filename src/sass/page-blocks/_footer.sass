@@ -1,2 +1,42 @@
 .footer
-  padding: 9px
+  padding: 50px 0
+  background-color: #F8F8F8
+  &__wrapper
+  &__col
+    p
+      font-weight: 400
+      font-size: 14px
+      line-height: 154%
+      margin-bottom: 20px
+  &__text
+  &__btn
+    background: #FFFFFF
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02)
+    border-radius: 10px
+    padding: 15px 23px
+    display: inline-block
+  &-menu
+    display: flex
+    justify-content: space-between
+    &>.footer-menu__item:nth-child(2)
+      display: none
+
+  &-menu__item
+    a
+      font-size: 18px
+      line-height: 22px
+      display: inline-block
+      margin-bottom: 30px
+  &-submenu
+    .footer-menu__item
+      margin-bottom: 14px
+      a
+        font-size: 14px
+        line-height: 17px
+        margin: 0
+  &-bottom
+  &__copyrights
+  &-privacy
+    margin-left: auto
+    display: block
+    width: fit-content
