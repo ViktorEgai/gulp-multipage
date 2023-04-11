@@ -1,0 +1,26 @@
+.header-menu
+  display: flex
+  align-items: center
+  justify-content: center
+  &__item
+    margin: 0 27px
+    a
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: -3px
+        left: 0
+        width: 0
+        height: 1px
+        background-color: #858585
+        transition: .3s
+@media screen and ( max-width: 992px )
+  .header-menu
+    flex-direction: column
+    &__item
+      margin: 0 0 30px
+@media screen and ( min-width: 992px )
+  .header-menu__item a:hover
+    &::before
+      width: 100%

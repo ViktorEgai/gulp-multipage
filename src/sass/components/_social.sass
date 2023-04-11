@@ -1,0 +1,16 @@
+.social
+  display: flex
+  align-items: center
+  justify-content: center
+  &__item
+    margin: 0 9px
+    display: block
+    path
+      transition: .3s
+@media screen and ( min-width: 992px )
+  .social__item:hover
+    path
+      &:nth-child(1)
+        fill: #fff
+      &:nth-child(2)
+        fill: $main-color

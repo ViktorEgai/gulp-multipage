@@ -1,0 +1,37 @@
+.footer-menu
+  display: flex
+  align-items: center
+  justify-content: center
+  &__item
+    margin: 0 20px
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    white-space: nowrap
+    color: #858585
+    a
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: -3px
+        left: 0
+        width: 0
+        height: 1px
+        background-color: #858585
+        transition: .3s
+  &-submenu
+@media screen and ( max-width: 1200px )
+  .footer-menu__item
+    margin: 0 12px
+@media screen and ( max-width:992px  )
+  .footer-menu
+    flex-direction: column
+    &__item
+      margin-bottom: 20px
+@media screen and ( min-width: 992px )
+  .footer-menu__item a:hover
+    &::before
+      width: 100%

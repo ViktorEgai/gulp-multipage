@@ -1,0 +1,24 @@
+.header-menu-btn
+  width: 35px
+  height: 35px
+  display: block
+  margin-left: auto
+  svg
+    width: 100%
+    height: 100%
+    transition: .3s
+    path
+      transition: .3s
+  &.active
+    svg
+      transform: rotate(180deg)
+    path
+
+      &:nth-child(1)
+        // transform-origin: left top
+        transform: rotate(45deg) translate(5px,-6px)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        // transform-origin: right bottom
+        transform: rotate(-45deg) translate(-12px,-1px)
