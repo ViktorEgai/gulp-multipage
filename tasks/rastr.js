@@ -13,6 +13,7 @@ module.exports = function rastr() {
 	return src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')
 		.pipe(plumber())
 		.pipe(changed('build/img'))
+		.pipe(changed('theme/img'))
 		.pipe(imagemin({
 				interlaced: true,
 				progressive: true,
@@ -35,5 +36,6 @@ module.exports = function rastr() {
 				imagemin.svgo()
 			], ), )
 		.pipe(dest('build/img'))
+		.pipe(dest('theme/img'))
 		.pipe(bs.stream())
 }

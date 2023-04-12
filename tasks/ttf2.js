@@ -14,5 +14,6 @@ module.exports = function ttf2(done) {
     }))
     .pipe(ttf2woff())
     .pipe(dest('build/fonts'))
+    .pipe(dest('theme/fonts'))
   done();
 }

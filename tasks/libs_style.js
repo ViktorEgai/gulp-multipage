@@ -24,6 +24,7 @@ module.exports = function libs_style(done) {
 			.pipe(concat('libs.min.css'))
 			.pipe(map.write('../sourcemaps/'))
 			.pipe(dest('build/css/'))
+			.pipe(dest('theme/css/'))
 	} else {
 		return done(console.log(chalk.redBright('No added CSS/SCSS plugins')));
 	}
